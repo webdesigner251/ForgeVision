@@ -449,8 +449,7 @@ header .nav-link:hover::before {
     background-position: center;
     background-size: 16px;
     left: -25px;
-    top: 50%;
-    transform: translate(0px, -50%);
+    top: 8px; 
 }
 
 /* ========================================= */
