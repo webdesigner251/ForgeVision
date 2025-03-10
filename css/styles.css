@@ -6,7 +6,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-html,body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -1037,12 +1038,33 @@ ul.info-widget li a:hover {
     .banner-wrapper .shield-icon-wrapper {
         padding: 12px;
     }
+
     .banner-wrapper .shield-icon-wrapper img {
         max-width: 32px;
     }
 
     .banner-wrapper .shield-icon-wrapper {
         top: -7%;
+    }
+
+    .banner-img {
+        width: 100%;
+        max-width: 85%;
+    }
+
+    .banner-wrapper .customer-count-wrapper {
+        left: 0;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .banner-wrapper .image-bg-wrapper::before {
+        width: 140%;
+        height: 130%;
+    }
+
+    .banner-wrapper .image-bg-wrapper::before {
+        bottom: -60px;
     }
 
     .banner-wrapper .customer-count-wrapper span {
