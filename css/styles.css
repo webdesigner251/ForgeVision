@@ -35,6 +35,14 @@ p {
     --font-secondary: 'Inter', sans-serif;
 }
 
+.text-primary {
+    color: var(--text-primary) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
 /* theme-border-btn  */
 
 .theme-border-btn {
@@ -169,6 +177,145 @@ header .nav-link:hover::before {
 /* ===================================================================== */
 
 
+
+/* ==================================================================== */
+/* Footer Starts */
+/* ========================================= */
+footer {
+    padding-top: 100px;
+}
+
+footer .logo {
+    max-width: 190px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer .f-para {
+
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+footer .social-link {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 12px;
+    margin: 15px 0px;
+}
+
+footer .social-link .f-icon-wrapper {
+    width: 34px;
+    height: 34px;
+    background: #F8F8F8;
+    border: 0.3px solid #EDEDED;
+    border-radius: 3px;
+    padding: 6px;
+    display: flex;
+    transition: 0.3s all ease;
+}
+
+footer .social-link .f-icon-wrapper:hover {
+    background: var(--bg-primary);
+}
+
+footer .social-link .f-icon-wrapper svg {
+    width: 100%;
+    height: auto;
+}
+
+footer .social-link .f-icon-wrapper svg path {
+    transition: 0.3s all ease;
+}
+
+footer .social-link .f-icon-wrapper:hover svg path {
+    fill: #FFF;
+}
+
+.footer-widget .footer-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.footer-widget ul {
+    padding-left: 20px;
+}
+
+.footer-widget ul li {
+    padding: 5px 0px;
+}
+
+.footer-widget ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    transition: 0.3s all ease;
+}
+
+.footer-widget ul li a:hover {
+    color: var(--text-primary);
+}
+
+.info-widget .f-icon-wrapper {
+    width: 34px;
+    height: 34px;
+    background: #F8F8F8;
+    border: 0.3px solid #EDEDED;
+    border-radius: 3px;
+    padding: 6px;
+    display: flex;
+    transition: 0.3s all ease;
+    flex: 0 0 34px;
+}
+
+ul.info-widget li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    transition: 0.3s all ease;
+}
+
+ul.info-widget li a:hover {
+    color: var(--text-primary);
+}
+
+.f-bottom-wrapper {
+    padding: 60px 0px 40px 0px;
+}
+
+.f-bottom-wrapper p {
+    position: relative;
+    padding: 20px 0 0;
+    border-top: 1px solid rgb(175, 173, 174, 0.6);
+}
+
+.f-bottom-wrapper a {
+    color: var(--text-secondary);
+    font-weight: 600;
+    transition: .4s all ease;
+}
+
+.f-bottom-wrapper a:hover {
+    color: var(--text-primary);
+}
+
+/* ========================================= */
+/* Footer End */
+/* ===================================================================== */
+
+/* ==================================================================== */
+/* Home page Page Start */
+/* ========================================= */
 
 /* ==================================================================== */
 /* Hero Banner Starts */
@@ -449,7 +596,7 @@ header .nav-link:hover::before {
     background-position: center;
     background-size: 16px;
     left: -25px;
-    top: 8px; 
+    top: 8px;
 }
 
 /* ========================================= */
@@ -721,132 +868,347 @@ header .nav-link:hover::before {
 /* CTA End */
 /* ===================================================================== */
 
+/* ========================================= */
+/* Home Page End */
+/* ===================================================================== */
+
+/* =============================================================================================================================== */
 
 /* ==================================================================== */
-/* Footer Starts */
+/* About Us Page */
 /* ========================================= */
-footer {
-    padding-top: 100px;
+
+/* ==================================================================== */
+/* Small Banner Start */
+/* ========================================= */
+.small-banner {
+    padding: 80px 0px;
+    background: rgba(222, 246, 240, 0.2);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-footer .logo {
-    max-width: 190px;
-    width: 100%;
-    margin-bottom: 20px;
+.small-banner::before {
+    content: "";
+    position: absolute;
+    width: 427.53px;
+    height: 544.35px;
+    left: 75.23px;
+    top: 235px;
+    background: #CCEEFF;
+    opacity: 0.5;
+    filter: blur(100px);
+    transform: matrix(-0.81, 0.58, 0.58, 0.81, 0, 0);
+    z-index: -1;
 }
 
-footer .f-para {
-
-    font-family: var(--font-secondary);
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: capitalize;
-    color: #000000;
+.small-banner::after {
+    content: "";
+    position: absolute;
+    width: 243.86px;
+    height: 399.3px;
+    right: 0;
+    top: 0;
+    background: #D2F0E9;
+    opacity: 0.5;
+    filter: blur(100px);
+    transform: rotate(-61.74deg);
+    z-index: -1;
 }
 
-footer .social-link {
-    display: flex;
-    list-style: none;
-    padding: 0;
+.breadcrumbs {
+    display: inline-flex;
+    flex-wrap: wrap;
     gap: 12px;
-    margin: 15px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 18px;
+    border-radius: 10px;
+    background: #43d0fe14;
+    border: 1px solid #7bdefd;
 }
 
-footer .social-link .f-icon-wrapper {
-    width: 34px;
-    height: 34px;
-    background: #F8F8F8;
-    border: 0.3px solid #EDEDED;
-    border-radius: 3px;
-    padding: 6px;
+.breadcrumbs .breadcrumb-item {
+    color: var(--text-secondary);
+    transition: 0.4s all ease;
+}
+
+
+.breadcrumbs .breadcrumb-item:hover {
+    color: var(--text-primary);
+}
+
+.breadcrumbs .breadcrumb-seperator {
+    color: var(--text-primary);
+}
+
+
+.about-us-img-wrapper img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.about-us-img-wrapper .col-4 {
     display: flex;
-    transition: 0.3s all ease;
+    align-items: end;
+    justify-content: center;
+    margin-left: -100px;
+    margin-bottom: -50px;
+    width: 50%;
+    padding: 0;
 }
 
-footer .social-link .f-icon-wrapper:hover {
-    background: var(--bg-primary);
+.about-us-img-wrapper .col-4 img {
+    height: 60%;
+    border-radius: 12px;
 }
 
-footer .social-link .f-icon-wrapper svg {
+/* Our mission section  */
+.mission-wrapper {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.mission-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: 0;
+    bottom: 0;
+    background: #CCEEFF;
+    opacity: 0.75;
+    filter: blur(100px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.mission-wrapper .mission-box-wrapper {
+    padding: 50px;
+    border: 1px solid #00acff73;
+    border-radius: 24px;
+    background: #f8fdfc;
+    backdrop-filter: blur(120px);
+}
+
+.mission-wrapper .mission-box-wrapper img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* ========================================= */
+/* Small Banner End */
+/* ===================================================================== */
+
+/* ========================================= */
+/* About Us Page End */
+/* ===================================================================== */
+
+
+/* =============================================================================================================================== */
+
+/* ==================================================================== */
+/* Industries Page Start */
+/* ========================================= */
+.industry-wrapper {
+    padding: 100px 0px;
+}
+
+.indus-main-wrapper .prb-sol-large-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.industries-nav div#nav-tab {
+    border: 0px !important;
+}
+
+nav.industries-nav {
+    background: #ffffff;
+    padding: 12px;
+    border: 1px solid #FFF;
+    border-radius: 19px;
+    box-shadow: -1px 3px 10px 10px #bee9ff4f;
+}
+
+.industries-nav .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 1px solid rgba(69, 69, 69, 0.1) !important;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.industries-nav .nav-link .icon-wrapper {
+    padding: 12px;
+    width: 70px;
+    height: 70px;
+    background: #3bbeff21;
+    border-radius: 12px;
+    border: 1px solid #5ac3f86b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.industries-nav .nav-link .icon-wrapper svg {
     width: 100%;
     height: auto;
 }
 
-footer .social-link .f-icon-wrapper svg path {
-    transition: 0.3s all ease;
-}
-
-footer .social-link .f-icon-wrapper:hover svg path {
-    fill: #FFF;
-}
-
-.footer-widget .footer-title {
-    font-weight: 500;
+.industries-nav .nav-link .text {
+    font-weight: 600;
     font-size: 20px;
-    line-height: 25px;
-    text-transform: capitalize;
-    color: #000000;
+    line-height: 24px;
+    color: var(--text-secondary);
 }
 
-.footer-widget ul {
-    padding-left: 20px;
+
+.industries-nav .nav-link.active {
+    background: linear-gradient(62.57deg, #9ADDFF -0.3%, #00AAFF 75.71%);
+    border: 1px solid rgb(142 217 255);
 }
 
-.footer-widget ul li {
-    padding: 5px 0px;
+.industries-nav .nav-link.active .icon-wrapper {
+    background-color: #FFF;
+    border-color: #FFF;
 }
 
-.footer-widget ul li a {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: capitalize;
-    color: #000000;
-    transition: 0.3s all ease;
+.industries-nav .nav-link.active .icon-wrapper svg path {
+    fill: var(--text-primary);
 }
 
-.footer-widget ul li a:hover {
-    color: var(--text-primary);
+.industries-nav .nav-link.active .text {
+    color: #FFF;
 }
 
-.info-widget .f-icon-wrapper {
-    width: 34px;
-    height: 34px;
-    background: #F8F8F8;
-    border: 0.3px solid #EDEDED;
-    border-radius: 3px;
-    padding: 6px;
-    display: flex;
-    transition: 0.3s all ease;
-    flex: 0 0 34px;
+.industry-wrapper .tab-content {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 0px 0px 12px 12px;
+    border-top: 0 !important;
+    padding: 32px !important;
+    background: #f3fbff !important;
+    border-color: #01aaff7e !important;
 }
 
-ul.info-widget li a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    transition: 0.3s all ease;
-}
-
-ul.info-widget li a:hover {
-    color: var(--text-primary);
-}
-
-.f-bottom-wrapper {
-    padding: 60px 0px 40px 0px;
-}
-
-.f-bottom-wrapper p {
-    position: relative;
-    padding: 20px 0 0;
-    border-top: 1px solid rgb(175, 173, 174, 0.6);
+.medium-heading {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--text-secondary);
 }
 
 /* ========================================= */
-/* Footer End */
+/* Industries Page End */
 /* ===================================================================== */
 
+/* =============================================================================================================================== */
+
+/* ==================================================================== */
+/* Contact Page Start */
+/* ========================================= */
+
+.contact-wrapper {
+    padding: 100px 0px;
+}
+
+.contact_form {
+    padding: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.05);
+}
+
+.contact_form-input {
+    margin-bottom: 20px;
+}
+
+.contact_form input {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text-secondary) !important;
+    border-radius: 16px !important;
+    background-color: #eff9fd !important;
+}
+
+.contact_form textarea {
+    border: none;
+    min-height: 199px;
+    padding: 16px 20px;
+    border-radius: 16px !important;
+    color: var(--text-secondary) !important;
+    background-color: #eff9fd !important;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+.contact-info-wrapper .icon-wrapper {
+    padding: 12px;
+    width: 60px;
+    height: 60px;
+    background: #3bbeff21;
+    border-radius: 12px;
+    border: 1px solid #5ac3f86b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 60px;
+}
+
+.contact-info-wrapper .icon-wrapper svg {
+    width: 100%;
+    height: auto;
+}
+
+
+.contact-info-wrapper .icon-wrapper svg path {
+    fill: var(--bg-primary);
+}
+
+.contact-info-wrapper .title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.contact-info-wrapper .link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-secondary);
+    word-break: break-all;
+    transition: 0.4s all ease;
+}
+
+.contact-info-wrapper .link:hover {
+    color: var(--text-primary);
+}
+
+/* ==================================================================== */
+/* Contact Page Start */
+/* ========================================= */
 
 /* ========================================= */
 /* Responsive Starts */
@@ -855,6 +1217,10 @@ ul.info-widget li a:hover {
 @media (max-width: 1200px) {
     .section-title {
         font-size: 42px;
+    }
+
+    .medium-heading {
+        font-size: 36px;
     }
 
     header .nav-item {
@@ -879,8 +1245,14 @@ ul.info-widget li a:hover {
 
     .banner-wrapper,
     .prb-sol-wrapper,
-    .testimonial-wrapper {
+    .testimonial-wrapper,
+    .industry-wrapper,
+    .contact-wrapper {
         padding: 70px 0px;
+    }
+
+    footer {
+        padding-top: 70px;
     }
 
     .main-heading {
@@ -944,8 +1316,16 @@ ul.info-widget li a:hover {
         align-items: center;
         justify-content: center;
     }
-}
 
+    /* About us */
+    .about-us-img-wrapper {
+        margin-bottom: 90px;
+    }
+
+    .about-us-img-wrapper .col-4 {
+        width: 45%;
+    }
+}
 
 @media (max-width: 767px) {
     .main-heading {
@@ -960,9 +1340,15 @@ ul.info-widget li a:hover {
         font-size: 38px;
     }
 
+    .section-title {
+        font-size: 30px;
+    }
+
     .banner-wrapper,
     .prb-sol-wrapper,
-    .testimonial-wrapper {
+    .testimonial-wrapper,
+    .industry-wrapper,
+    .contact-wrapper {
         padding: 50px 0px;
     }
 
@@ -1005,6 +1391,19 @@ ul.info-widget li a:hover {
         align-items: center;
         text-align: center;
     }
+
+    /* About us page */
+    .about-us-img-wrapper {
+        margin-bottom: 90px;
+    }
+
+    .small-banner {
+        padding: 50px 0px;
+    }
+
+    footer {
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1013,6 +1412,62 @@ ul.info-widget li a:hover {
         right: 20px;
     }
 
+    .why-choose-us {
+        padding: 50px 0px;
+    }
+
+    .mission-wrapper .mission-box-wrapper {
+        padding: 25px;
+    }
+
+    .mission-wrapper {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .industries-nav .nav-link .text {
+        font-size: 16px;
+    }
+
+    .industries-nav .nav-link .icon-wrapper {
+        padding: 9px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .industries-nav .nav-link {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .contact_form {
+        padding: 20px;
+    }
+
+    .contact_form textarea {
+        min-height: 150px;
+    }
+
+    .contact-info-wrapper .link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contact-info-wrapper .title {
+        margin-bottom: 2px;
+    }
+
+    .contact-info-wrapper .icon-wrapper {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        flex: 0 0 50px;
+    }
+
+    footer {
+        padding-top: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1032,6 +1487,10 @@ ul.info-widget li a:hover {
 
     .section-title {
         font-size: 32px;
+    }
+
+    .medium-heading {
+        font-size: 28px;
     }
 
     .banner-wrapper .shield-icon-wrapper {
@@ -1132,6 +1591,10 @@ ul.info-widget li a:hover {
 
     .footer-widget ul li a {
         font-size: 14px;
+    }
+
+    .small-banner {
+        padding-top: 20px;
     }
 }
 
