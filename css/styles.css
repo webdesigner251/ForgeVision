@@ -670,6 +670,10 @@ ul.info-widget li a:hover {
     height: 100%;
     max-width: 80%;
     border-radius: 10px;
+    min-height: 390px;
+    object-fit: cover;
+    max-height: 390px;
+    object-position: top;
 }
 
 .why-choose-card {
@@ -953,6 +957,22 @@ ul.info-widget li a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.industry-us {
+    background: linear-gradient(180deg, rgba(1, 103, 153, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+        url('../images/about-us.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-us {
+    background: linear-gradient(180deg, rgba(1, 103, 153, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+    url('../images/industry-img.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;  
 }
 
 .breadcrumbs {
@@ -1658,6 +1678,8 @@ color: var(--text-primary) !important;
 
     .why-choose-img {
         max-width: 90%;
+        min-height: auto;
+        max-height: 100%;
     }
 
     .testimonial-wrapper .swiper-button {
