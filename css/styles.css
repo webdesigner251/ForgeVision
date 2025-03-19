@@ -64,6 +64,7 @@ p {
 .dropdown-menu li {
     padding: 5px 0px;
 }
+
 a {
     cursor: pointer;
 }
@@ -553,6 +554,7 @@ ul.info-widget li a:hover {
     object-fit: cover;
     height: 450px;
     max-width: 90%;
+    object-position: top;
 }
 
 .prb-sol-card {
@@ -969,10 +971,10 @@ ul.info-widget li a:hover {
 
 .contact-us {
     background: linear-gradient(180deg, rgba(1, 103, 153, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
-    url('../images/industry-img.jpg');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;  
+        url('../images/industry-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .breadcrumbs {
@@ -1449,19 +1451,19 @@ nav.industries-nav {
     gap: 12px;
 }
 
-.recent-blogs ul li a .img-wrapper{
+.recent-blogs ul li a .img-wrapper {
     flex: 0 0 25%;
     border-radius: 8px;
 }
 
-.recent-blogs ul li a .img-wrapper img{
+.recent-blogs ul li a .img-wrapper img {
     width: 100%;
     border-radius: 8px;
     height: 100%;
     object-fit: cover;
 }
 
-.recent-blogs ul li a  h4 {
+.recent-blogs ul li a h4 {
     color: var(--text-secondary) !important;
     font-size: 18px;
     transition: 0.4s all ease;
@@ -1475,9 +1477,10 @@ nav.industries-nav {
     border-color: #9FE0FF;
 }
 
-.recent-blogs ul li a:hover h4  {
-color: var(--text-primary) !important;
+.recent-blogs ul li a:hover h4 {
+    color: var(--text-primary) !important;
 }
+
 /* ==================================================================== */
 /* Blog page Start */
 /* ========================================= */
@@ -1836,7 +1839,11 @@ color: var(--text-primary) !important;
     }
 
     .medium-heading {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .product-features-wrapper .check-list li {
+        font-size: 16px;
     }
 
     .banner-wrapper .shield-icon-wrapper {
@@ -1943,7 +1950,7 @@ color: var(--text-primary) !important;
         padding-top: 20px;
     }
 
-    section.small-banner.about-us     .main-heading {
+    section.small-banner.about-us .main-heading {
         font-size: 36px;
     }
 }
