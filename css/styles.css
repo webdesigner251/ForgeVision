@@ -1132,6 +1132,17 @@ ul.info-widget li a:hover {
     max-width: 100%;
 }
 
+.industry-banner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background: linear-gradient(90deg, #b1e3fa 50%, #3fa9f5 50%);
+}
+
+.industry-banner .about-us {
+    width: 65%;
+}
+
 .industries-nav div#nav-tab {
     border: 0px !important;
 }
@@ -1567,7 +1578,6 @@ nav.industries-nav {
 /* ==================================================================== */
 /* Blog page Start */
 /* ========================================= */
-
 .blog-box-wrapper {
     border-radius: 20px;
     padding: 20px;
@@ -1702,7 +1712,7 @@ nav.industries-nav {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .navbar-collapse {
         position: absolute;
         width: 100%;
@@ -2044,6 +2054,11 @@ nav.industries-nav {
 
     .benefit-wrapper .nav-link {
         font-size: 14px;
+    }
+
+    .about-us,
+    .industry-banner .about-us {
+        width: 100%;
     }
 }
 
