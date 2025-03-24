@@ -274,6 +274,7 @@ footer .social-link .f-icon-wrapper:hover svg path {
 
 .footer-widget ul {
     padding-left: 20px;
+    margin-bottom: 0;
 }
 
 .footer-widget ul li {
@@ -1559,10 +1560,10 @@ nav.industries-nav {
 .benefit-wrapper .nav-link.active {
     background: linear-gradient(62.57deg, #9ADDFF -0.3%, #00AAFF 75.71%);
     border: 1px solid rgb(142 217 255) !important;
-    color: #FFF ;
+    color: #FFF;
 }
 
-.benefit-wrapper .tab-content  p {
+.benefit-wrapper .tab-content p {
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 18px;
@@ -1570,6 +1571,7 @@ nav.industries-nav {
     opacity: 0.8;
     margin-bottom: 0;
 }
+
 /* ==================================================================== */
 /* Product Page Start */
 /* ========================================= */
@@ -1952,7 +1954,8 @@ nav.industries-nav {
         padding-right: 30px;
     }
 
-    .left-content-wrapper::before, .right-content-wrapper::before {
+    .left-content-wrapper::before,
+    .right-content-wrapper::before {
         width: 105%;
         height: 170%;
         left: 50%;
@@ -1967,6 +1970,13 @@ nav.industries-nav {
 
     .prb-sol-card {
         right: 20px;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .prb-sol-card img {
+        width: 50px;
+        height: auto;
     }
 
     .why-choose-us {
@@ -2060,6 +2070,15 @@ nav.industries-nav {
     .industry-banner .about-us {
         width: 100%;
     }
+
+    .about-us-img-wrapper .col-4 {
+        width: 60%;
+    }
+
+    .mission-box-wrapper .col-lg-7,
+    .mission-box-wrapper .col-lg-5 {
+        padding: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2087,10 +2106,13 @@ nav.industries-nav {
 
     .product-img {
         min-height: 100%;
+        border-radius: 14px;
     }
 
-    .left-content-wrapper::before, .right-content-wrapper::before {
-        top: 20%;
+    .left-content-wrapper::before,
+    .right-content-wrapper::before {
+        top: 35%;
+        height: 130%;
     }
 
     .banner-wrapper .shield-icon-wrapper {
@@ -2193,12 +2215,20 @@ nav.industries-nav {
         font-size: 14px;
     }
 
-    .small-banner {
-        padding-top: 20px;
-    }
-
     section.small-banner.about-us .main-heading {
         font-size: 36px;
+    }
+
+    .industry-wrapper .tab-content {
+        padding: 20px !important;
+    }
+
+    .cta-wrapper .cta-inner-wrapper .padding-wrapper {
+        padding: 30px 20px;
+    }
+
+    .product-banner .main-heading {
+        font-size: 34px;
     }
 }
 
