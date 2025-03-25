@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | ForgeVision - Food Waste Prevention</title>
+    <title>Contact Us | ForgeVision - Food Waste Prevention</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -123,7 +123,7 @@
                             </div>
                             <div class="text-wrapper">
                                 <h3 class="title">Email us :</h3>
-                                <a href="mailto:info@forgevision.com" class="link my-2 d-block">info@forgevision.com</a>                               
+                                <a href="mailto:info@forgevision.com" class="link my-2 d-block">info@forgevision.com</a>
                             </div>
                         </div>
                         <div class="contact-info-wrapper mb-lg-4 mb-3">
@@ -147,51 +147,80 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form"
+                            class="needs-validation contact_form mt-lg-5 mt-3" novalidate>
+                            <input type="hidden" name="access_key" value="5f7de8a2-c500-4ae8-a8da-51ba07841449" />
+                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact_form mt-lg-5 mt-3">
-                            <input type="hidden" name="access_key" value="access_key">
-                            <input type="hidden" name="subject" value="ForgeVision New Appointment Request">
-                            <input type="hidden" name="form_type" value="ForgeVision New Appointment">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="contact_form-input">
                                         <div class="input-wrapper">
-                                            <input type="text" name="name" placeholder="Your Name..." required>
+                                            <input type="text" name="name" id="first_name" placeholder="John" required
+                                                class="w-full" />
+                                            <div class="empty-feedback invalid-feedback mt-1">
+                                                Please provide your first name.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="contact_form-input">
                                         <div class="input-wrapper">
-                                            <input type="email" name="email" placeholder="Your Email..." required>
+
+                                            <input type="email" name="email" id="email" placeholder="you@company.com"
+                                                required class="w-full" />
+                                            <div class="invalid-feedback mt-1">
+                                                Please provide a valid email address.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="contact_form-input">
                                         <div class="input-wrapper">
-                                            <input name="phone" type="text" placeholder="Your phone..." required>
+
+                                            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567"
+                                                required class="w-full" />
+
+                                            <div class="empty-feedback invalid-feedback mt-1">
+                                                Please provide your phone number.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="contact_form-input">
                                         <div class="input-wrapper">
-                                            <input name="Subject" type="text" placeholder="Subject..." required>
+
+                                            <input name="Subject" type="text" id="subject" placeholder="Subject..."
+                                                required>
+                                            <div class="empty-feedback invalid-feedback mt-1">
+                                                Please enter your subject.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="contact_form-input">
-                                        <textarea name="textarea" id="textarea" placeholder="Messege"
-                                            class="w-100"></textarea>
+                                        <div class="input-wrapper">
+
+                                            <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                                class="w-full" required></textarea>
+                                            <div class="empty-feedback invalid-feedback mt-1">
+                                                Please enter your message.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12 position-relative z-0">
-                                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                                <div class="col-sm-12">
                                     <button type="submit" class="theme-gradient-btn d-inline-flex text-center border-0">
                                         Submit
                                     </button>
+                                </div>
+                                <div class="col-12">
+                                    <p class="text-base text-center text-gray-400" id="result"></p>
                                 </div>
                             </div>
                         </form>
@@ -325,7 +354,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

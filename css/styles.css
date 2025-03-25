@@ -1295,6 +1295,7 @@ nav.industries-nav {
     border-radius: 16px !important;
     color: var(--text-secondary) !important;
     background-color: #eff9fd !important;
+    width: 100%;
 }
 
 .contact-info-wrapper {
@@ -1345,6 +1346,31 @@ nav.industries-nav {
 
 .contact-info-wrapper .link:hover {
     color: var(--text-primary);
+}
+
+
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+p#result span {
+    color: #14c31b;
+    font-size: 18px;
 }
 
 /* ==================================================================== */
